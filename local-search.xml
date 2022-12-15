@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>About_Hackergame</title>
+    <link href="/2022/11/02/About-Hackergame/"/>
+    <url>/2022/11/02/About-Hackergame/</url>
+    
+    <content type="html"><![CDATA[<p>又是一次心血来潮。要说当时风声呼啸，我眉头紧缩，紧盯着电脑屏幕，大脑疯狂运转，只为完成英语Presentation。<br>这时，同学对Hackergame的讨论传来，于是我心想：英语展示还有3周准备时间，不如休息休息，打打Hackergame…结果一点也算不上休息。</p><h1 id="纯新手啥也不会系列"><a href="#纯新手啥也不会系列" class="headerlink" title="纯新手啥也不会系列"></a>纯新手啥也不会系列</h1><h2 id="首先是签到题"><a href="#首先是签到题" class="headerlink" title="首先是签到题"></a>首先是签到题</h2><p>说实话，一开始我真的想把2022写出来，原因是第三个框我已经能熟练骗出2，最后一个也写出过5和7<br>忽然，在我尝试多次后，无意间瞟到地址栏的a&#x3D;2027，于是心生一计，然后成功了。</p><h2 id="然后是猫咪问答（什么都不会，只能按顺序）"><a href="#然后是猫咪问答（什么都不会，只能按顺序）" class="headerlink" title="然后是猫咪问答（什么都不会，只能按顺序）"></a>然后是猫咪问答（什么都不会，只能按顺序）</h2><p>结果是只写出来三道，都是找日期的题。<br>有两个太简单了不说了，最后一个关于网费的题我觉得很有意思，下面细说：<br>题目要求是一开始改为20元每月的日期，直接搜索后找到一篇调整通知。<br>但是，通知中的新旧政策都是20元，说明还要找到更老的调整通知，在中科大官网中找到一篇的2003年的通知，至此本题结束。</p><h2 id="HeiLang"><a href="#HeiLang" class="headerlink" title="HeiLang"></a>HeiLang</h2><p>直说没做出来。<br>推测要求是对数组进行正确赋值，然后没了。</p><h2 id="旅行照片"><a href="#旅行照片" class="headerlink" title="旅行照片"></a>旅行照片</h2><p>没做完，但是非常刺激。<br>第一题图片信息不说了。<br>第二题下面细说：<br>首先猜测面前的圆形体育场为标志性建筑，直接百度搜索无果。<br>放大后发现一个标志和一段标语“WECOME TO ZOZO?A?M? STADIUM”,搜索找到日本千叶海洋球场。<br>看地图找附近的酒馆找到邮政编码。<br>手机分辨率是从反光的摄像头样式找出来的。<br>飞机确实没找到，看题解后发现自己没精确到秒，而且也没有找到合适的历史航线查找工具。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我终究是菜的qwq，希望能有以后吧</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>ctf</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>About_MoeCTF</title>
+    <link href="/2022/11/02/About-MoeCTF/"/>
+    <url>/2022/11/02/About-MoeCTF/</url>
+    
+    <content type="html"><![CDATA[<p>确实是刚接触，也做不出什么题。</p><h2 id="（忘了名字，总之是关于字母歌）"><a href="#（忘了名字，总之是关于字母歌）" class="headerlink" title="（忘了名字，总之是关于字母歌）"></a>（忘了名字，总之是关于字母歌）</h2><p>要点是字母表倒着写</p><h2 id="小小凯撒"><a href="#小小凯撒" class="headerlink" title="小小凯撒"></a>小小凯撒</h2><p>凯撒密码的简单应用，爆破就行。</p><h2 id="凯撒变异了"><a href="#凯撒变异了" class="headerlink" title="凯撒变异了"></a>凯撒变异了</h2><h3 id="114514（笑）"><a href="#114514（笑）" class="headerlink" title="114514（笑）"></a>114514（笑）</h3><p>有两个要点，一个是按照114514向前对应字母；还有一个是26个小写和大写字母排在一起进行对应（大概是？）</p><h4 id="凭记忆大概就是这些"><a href="#凭记忆大概就是这些" class="headerlink" title="凭记忆大概就是这些"></a>凭记忆大概就是这些</h4>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>ctf</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>First_of_all</title>
+    <link href="/2022/11/02/First_of_all/"/>
+    <url>/2022/11/02/First_of_all/</url>
+    
+    <content type="html"><![CDATA[<p>简单的说就是各种机缘巧合。机缘巧合来了山大网安，机缘巧合打了MoeCTF，真有意思！<br>创建博客也很有意思，跟着B站的教程出了许多问题。<br>红底醒目的FATAL，结果细看是yml文件里少了两个冒号；<br>git要我输令牌，还不能CTRL c+v(感谢郑神让我认识到VScode的强大)；<br>网络也出了好多好多好多(恼)问题(属于玄学)…<br>总之Blog是搭好了。</p><h2 id="该记录些东西了"><a href="#该记录些东西了" class="headerlink" title="该记录些东西了"></a>该记录些东西了</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs">⣿⣿⣿⣿⣿⣿⢟⣡⣴⣶⣶⣦⣌⡛⠟⣋⣩⣬⣭⣭⡛⢿⣿⣿⣿⣿<br>⣿⣿⣿⣿⠋⢰⣿⣿⠿⣛⣛⣙⣛⠻⢆⢻⣿⠿⠿⠿⣿⡄⠻⣿⣿⣿ <br>⣿⣿⣿⠃⢠⣿⣿⣶⣿⣿⡿⠿⢟⣛⣒⠐⠲⣶⡶⠿⠶⠶⠦⠄⠙⢿ <br>⣿⠋⣠⠄⣿⣿⣿⠟⡛⢅⣠⡵⡐⠲⣶⣶⣥⡠⣤⣵⠆⠄⠰⣦⣤⡀ <br>⠇⣰⣿⣼⣿⣿⣧⣤⡸⢿⣿⡀⠂⠁⣸⣿⣿⣿⣿⣇⠄⠈⢀⣿⣿⠿ <br>⣰⣿⣿⣿⣿⣿⣿⣿⣷⣤⣈⣙⠶⢾⠭⢉⣁⣴⢯⣭⣵⣶⠾⠓⢀⣴<br>⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣉⣤⣴⣾⣿⣿⣦⣄⣤⣤⣄⠄⢿⣿<br>⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠈⢿<br>⣿⣿⣿⣿⣿⣿⡟⣰⣞⣛⡒⢒⠤⠦⢬⣉⣉⣉⣉⣉⣉⣉⡥⠴⠂⢸<br>⠻⣿⣿⣿⣿⣏⠻⢌⣉⣉⣩⣉⡛⣛⠒⠶⠶⠶⠶⠶⠶⠶⠶⠂⣸⣿<br>⣥⣈⠙⡻⠿⠿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⠿⠛⢉⣠⣶⣶⣿⣿<br></code></pre></td></tr></table></figure><h3 id="前面的区域以后再来探索吧！"><a href="#前面的区域以后再来探索吧！" class="headerlink" title="前面的区域以后再来探索吧！"></a>前面的区域以后再来探索吧！</h3><p>没东西了,<a href="https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click">真的</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Test</title>
+    <link href="/2022/11/01/Test/"/>
+    <url>/2022/11/01/Test/</url>
+    
+    <content type="html"><![CDATA[<pre><code class="hljs">22年11月1日22：09首次创建文稿，心情略有忐忑。</code></pre><h4 id="那个男人镇楼"><a href="#那个男人镇楼" class="headerlink" title="那个男人镇楼"></a>那个男人镇楼</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs">⠄⠄⠄⠄⠄⠄⢴⡶⣶⣶⣶⡒⣶⣶⣖⠢⡄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄ <br>⠄⠄⠄⠄⠄⠄⢠⣿⣋⣿⣿⣉⣿⣿⣯⣧⡰⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄ <br>⠄⠄⠄⠄⠄⠄⣿⣿⣹⣿⣿⣏⣿⣿⡗⣿⣿⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄ <br>⠄⠄⠄⠄⠄⠄⠟⡛⣉⣭⣭⣭⠌⠛⡻⢿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄ <br>⠄⠄⠄⠄⠄⠄⠄⠄⣤⡌⣿⣷⣯⣭⣿⡆⣈⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄ <br>⠄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣷⢛⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄ <br>⠄⠄⠄⠄⠄⠄⠄⠄⢻⣷⣽⣿⣿⣿⢿⠃⣼⣧⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄ <br>⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣛⣻⣿⠟⣀⡜⣻⢿⣿⣿⣶⣤⡀⠄⠄⠄⠄⠄ <br>⠄⠄⠄⠄⠄⠄⠄⠄⢠⣤⣀⣨⣥⣾⢟⣧⣿⠸⣿⣿⣿⣿⣿⣤⡀⠄⠄⠄<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
