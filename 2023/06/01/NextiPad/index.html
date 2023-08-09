@@ -1,0 +1,865 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="PH Gao">
+  <meta name="keywords" content="Blog">
+  
+    <meta name="description" content="Your next computer is not computer &#x2F;or what？关于iPad上装Linux的初探据说平板只有iPad和其他，上了大学以“方便学习”为理由买了一款iPad，但是迫于其蒟蒻的软件适配以及封闭的环境始终不能让iPad与“生产力”挂钩🥲但是！ 有没有一种可能，能将iPad刷上其他的系统，从而让M1不再隐忍，解放自己的真正实力呢？答案是用UTM在iPad上">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NextiPad">
+<meta property="og:url" content="http://example.com/2023/06/01/NextiPad/index.html">
+<meta property="og:site_name" content="Maybe_GPH&#39;s_Blog?">
+<meta property="og:description" content="Your next computer is not computer &#x2F;or what？关于iPad上装Linux的初探据说平板只有iPad和其他，上了大学以“方便学习”为理由买了一款iPad，但是迫于其蒟蒻的软件适配以及封闭的环境始终不能让iPad与“生产力”挂钩🥲但是！ 有没有一种可能，能将iPad刷上其他的系统，从而让M1不再隐忍，解放自己的真正实力呢？答案是用UTM在iPad上">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2023/06/01/2JpcYisQ8DdAraG.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/01/hOLV3Zi1mH5rTeI.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/01/yaX7CxzKFkn42A3.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/01/Y7gEATlr625zojN.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/CchVgDFlPOqMfz5.png">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-a4c371fbe3698faa5ccc2a48e5078601_b.webp?consumer=ZHI_MENG">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/8isPoQpfnyFYdRa.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/hkNFjaqo98SrbLC.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/ojY4m5pNlEebCHy.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/NwLqWzR7Yh32GTf.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/KGEPvjDcZaoxbfw.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/qCPE2eLprulRWnh.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/xbArqIUoQ6tTLj3.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/r9hsOkAvcu1FCGL.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/9JvVD8GAKBTtNH1.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/bpHvmCsDU8RxLtY.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/yAtQ8v4uJ9grdmo.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/njcoMCTBpxrDIA3.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/J3Oq9Pirbu1cRGf.png">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/vaUezIZ5GV4fjPq.jpg">
+<meta property="og:image" content="https://s2.loli.net/2023/06/02/D6FPLBzTgnZIsHK.jpg">
+<meta property="article:published_time" content="2023-06-01T11:42:58.000Z">
+<meta property="article:modified_time" content="2023-06-02T11:31:50.364Z">
+<meta property="article:author" content="PH Gao">
+<meta property="article:tag" content="iPad">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s2.loli.net/2023/06/01/2JpcYisQ8DdAraG.png">
+  
+  
+  
+  <title>NextiPad - Maybe_GPH&#39;s_Blog?</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="NextiPad"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-06-01 19:42" pubdate>
+          2023年6月1日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          5.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          46 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">NextiPad</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Your-next-computer-is-not-computer-x2F-or-what？"><a href="#Your-next-computer-is-not-computer-x2F-or-what？" class="headerlink" title="Your next computer is not computer &#x2F;or what？"></a>Your next computer is not computer &#x2F;or what？</h1><h2 id="关于iPad上装Linux的初探"><a href="#关于iPad上装Linux的初探" class="headerlink" title="关于iPad上装Linux的初探"></a>关于iPad上装Linux的初探</h2><p>据说平板只有iPad和其他，上了大学以“方便学习”为理由买了一款iPad，但是迫于其蒟蒻的软件适配以及封闭的环境始终不能让iPad与“生产力”挂钩🥲<strong>但是！</strong> 有没有一种可能，能将iPad刷上其他的系统，从而让M1不再隐忍，解放自己的真正实力呢？答案是用UTM在iPad上搭建虚拟机。</p>
+<p><strong>前排提示，对于iPadOS15.4以上的平板，由于苹果官方修复了一些漏洞，暂时还没有开启虚拟化的方法。也就是说，在iPadOS15.4上的设备运行虚拟机只能达到能用的阶段。大概是终端运行流畅，但是所有的图形界面都会很卡，很卡！所以iPadOS15.4以上的设备很难通过虚拟机释放生产力。请自行决定要不要尝试</strong></p>
+<hr>
+<h2 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h2><ol>
+<li><strong>UTM安装</strong><ol>
+<li>对于iPadOS15.4以下或一些特殊版本的设备</li>
+<li>对于iPadOS15.4以上的设备</li>
+</ol>
+</li>
+<li><strong>JIT启动</strong><ol>
+<li>连接电脑</li>
+<li>无线<ol>
+<li>Jitterbug</li>
+<li>牛蛙助手</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>虚拟机安装</strong><ol>
+<li>暂时只有Archlinux ;)</li>
+</ol>
+</li>
+<li><strong>尾声</strong></li>
+</ol>
+<hr>
+<h2 id="一、UTM安装"><a href="#一、UTM安装" class="headerlink" title="一、UTM安装"></a>一、UTM安装</h2><h3 id="a-对于iPadOS15-4以下或一些特殊版本的设备"><a href="#a-对于iPadOS15-4以下或一些特殊版本的设备" class="headerlink" title="a.对于iPadOS15.4以下或一些特殊版本的设备"></a>a.对于iPadOS15.4以下或一些特殊版本的设备</h3><p>对于这些设备，我非常荣幸地告诉您：<strong>这是可以开启虚拟化的</strong>，也就是能最大化使用您地iPad，所以我推荐<strong>使用TrollStore安装UTM.HV</strong></p>
+<h4 id="1）安装TrollStore"><a href="#1）安装TrollStore" class="headerlink" title="1）安装TrollStore"></a>1）安装TrollStore</h4><p>在iPad上点击这个网站：<a target="_blank" rel="noopener" href="https://github.com/opa334/TrollStore">https://github.com/opa334/TrollStore
+</a>确认自己的系统是可以进行虚拟化的</p>
+<p>首先看看自己的版本是否在这张图里：<br><img src="https://s2.loli.net/2023/06/01/2JpcYisQ8DdAraG.png" srcset="/img/loading.gif" lazyload alt="__IZ__KQAYM30CZ_R~G_CME.png"><br>标蓝的是可以的（这篇文章编辑于23年儿童节，之后网站可能会有更新（大概率不会））</p>
+<p>对于相应的版本，点击上图标蓝的链接进入这个界面：<br><img src="https://s2.loli.net/2023/06/01/hOLV3Zi1mH5rTeI.png" srcset="/img/loading.gif" lazyload alt="W_QFO_2M_ZWZUTSB_D@P_~T.png"></p>
+<p>说得很清楚了，点击链接安装软件，然后打开软件安装TrollStore，然后安装一些配置，照着网站来就行。</p>
+<h4 id="2）安装UTM-HV"><a href="#2）安装UTM-HV" class="headerlink" title="2）安装UTM.HV"></a>2）安装UTM.HV</h4><p>点击这个链接<a target="_blank" rel="noopener" href="https://docs.getutm.app/installation/ios/">https://docs.getutm.app/installation/ios/
+</a><br>页面下翻找到对应版本<br>![__T5I~@T&#96;EX_A2I6__GY37W.png](<a target="_blank" rel="noopener" href="https://s2.loli.net/2023/06/01/wacDVog5vBL7th1.png">https://s2.loli.net/2023/06/01/wacDVog5vBL7th1.png</a>)</p>
+<p>这里可以下载所有版本的UTM，所以等会也会用到。</p>
+<p>点击UTM.HV.ipa下载好文件</p>
+<blockquote>
+<p>PS：苹果设备的ipa文件可以理解为安卓设备的apk文件，就是软件安装包</p>
+</blockquote>
+<p>将UTM.HV.ipa使用TrollStore打开，或者在TrollStore打开UTM.HV.ipa进行安装。</p>
+<blockquote>
+<p>到此，<em>对于iPadOS15.4以下或一些特殊版本的设备的UTM安装</em> 结束</p>
+</blockquote>
+<h3 id="b-对于iPadOS15-4以上的普通版本的设备"><a href="#b-对于iPadOS15-4以上的普通版本的设备" class="headerlink" title="b.对于iPadOS15.4以上的普通版本的设备"></a>b.对于iPadOS15.4以上的普通版本的设备</h3><p><strong>很不幸，对于这些版本（也就是上文图中没有出现的版本）的设备，你们的设备无法开启虚拟化，只能使用普通的UTM进行还不错（拉跨）的模拟，请自行选择要不要进行。</strong></p>
+<p>首先你需要了解Apple的应用签名机制：“App Store 保护了开发者不受盗版软件的侵害，也保护了 iOS 设备不受有害应用的侵扰。当 iOS 设备安装一个新的 App 时， iOS 会主动去 Apple 服务器验证 App 的安装包内置的“签名”是否有效。”所以通常这些自己下载的软件是不能安装到自己的设备上的。前文所讲的TrollStore是利用了系统的漏洞才达到了直接安装的效果，所以对于不能安装TrollStore的设备，你需要一些特殊的方式来安装这些没有签名的软件。比如之前的TrollStore，但是对于不能安装TrollStore的设备，就只能给它签个名了。</p>
+<h4 id="1）签名"><a href="#1）签名" class="headerlink" title="1）签名"></a>1）签名</h4><p>目前整理出六种办法</p>
+<ol>
+<li>使用AltStore进行侧载，缺点是每7天需要更新一次签名</li>
+<li>使用SideLoadly进行侧载，缺点也是7天更新</li>
+<li>使用爱思助手进行侧载，缺点是7天更新而且比较麻烦</li>
+<li>使用牛蛙助手进行侧载，缺点是7天而且有广告</li>
+<li>使用iSign网站签名，缺点是要钱</li>
+<li>找一个拥有Apple开发者账号的哥们帮你签（PS：￥688&#x2F;年），缺点是要哥们<blockquote>
+<p>PS：前四个都需要使用电脑</p>
+</blockquote>
+</li>
+</ol>
+<h5 id="1-AltStore"><a href="#1-AltStore" class="headerlink" title="1.AltStore"></a>1.AltStore</h5><p>比较推荐，尤其对于只是想试试的同学，因为安装简单，并且UI设计比较有果味儿</p>
+<p>首先在电脑上安装好iCloud</p>
+<p>然后下载AltServer<a target="_blank" rel="noopener" href="https://altstore.io/">https://altstore.io/</a></p>
+<p>接着解压，点击Setup.exe进行安装</p>
+<p>安装完成后点击win键搜索AltServer打开（或者之前记好安装路径然后找到AltServer.exe）</p>
+<p>然后再右下角工作栏找到启动的AltServe，链接你的设备，点击第二个选项，填入你的信息，将AltStore安装到你的设备上<br><img src="https://s2.loli.net/2023/06/01/yaX7CxzKFkn42A3.png" srcset="/img/loading.gif" lazyload alt="屏幕截图_20230601_214024.png"></p>
+<p>安装完成后，在设置内依次进入：通用–描述文件与设备管理，进行信任证书。</p>
+<p>然后就可以在AltStore左上角选择文件将下载的ipa软件包进行侧载了</p>
+<p>详细步骤参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/355571144">https://zhuanlan.zhihu.com/p/355571144</a></p>
+<blockquote>
+<p>PS：侧载并不只用于UTM的安装，理论上可以安装所有的ipa软件，比如我个人就安装了PojavLauncher用来在iPad上玩java版MC，实际效果非常丝滑</p>
+</blockquote>
+<h5 id="2-SideLoadly-amp-3-爱思助手"><a href="#2-SideLoadly-amp-3-爱思助手" class="headerlink" title="2.SideLoadly&amp;3.爱思助手"></a>2.SideLoadly&amp;3.爱思助手</h5><p>详细步骤：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/397225793">https://zhuanlan.zhihu.com/p/397225793</a><br>(用别人写的肯定不是我懒🤗)</p>
+<h5 id="4-牛蛙助手"><a href="#4-牛蛙助手" class="headerlink" title="4.牛蛙助手"></a>4.牛蛙助手</h5><p>这里不推荐使用</p>
+<h5 id="5-iSign"><a href="#5-iSign" class="headerlink" title="5.iSign"></a>5.iSign</h5><p>进入这个网站<a target="_blank" rel="noopener" href="https://isign.ren/#/">https://isign.ren/#/</a></p>
+<p>进行注册，购买，等待签名，安装。操作非常简单，网站里也有步骤。大概是15元签个名，然后0.1元一天。</p>
+<h5 id="6-开发者账号"><a href="#6-开发者账号" class="headerlink" title="6.开发者账号"></a>6.开发者账号</h5><p>全部交给你的哥们吧。</p>
+<p><strong>或者</strong>，自己买一个 ;)</p>
+<p>参考这篇文章<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/601452109">https://zhuanlan.zhihu.com/p/601452109</a></p>
+<h4 id="2）安装UTM"><a href="#2）安装UTM" class="headerlink" title="2）安装UTM"></a>2）安装UTM</h4><p>打开这个网站<a target="_blank" rel="noopener" href="https://docs.getutm.app/installation/ios/">https://docs.getutm.app/installation/ios/
+</a></p>
+<p>下载UTM.ipa</p>
+<blockquote>
+<p>PS:不是UTM.SE.ipa！更不是UTM.deb！😡</p>
+</blockquote>
+<p>然后用以上任何一种方法装到你的设备上，就可以进行下一步了。</p>
+<hr>
+<h2 id="二、启用JIT"><a href="#二、启用JIT" class="headerlink" title="二、启用JIT"></a>二、启用JIT</h2><p>这一步非常必要，如果没有启动JIT，你设备的运行效率会十分不好描述😱</p>
+<p>我整理了两类方法：</p>
+<ol>
+<li><strong>有线启动</strong><ol>
+<li>Xcode启动</li>
+<li>AltStore启动</li>
+</ol>
+</li>
+<li><strong>无线启动</strong><ol>
+<li>Jitterbug</li>
+<li>牛蛙助手</li>
+</ol>
+</li>
+</ol>
+<h3 id="有线启动"><a href="#有线启动" class="headerlink" title="有线启动"></a>有线启动</h3><h4 id="1-Xcode启动"><a href="#1-Xcode启动" class="headerlink" title="1.Xcode启动"></a>1.Xcode启动</h4><p>不懂，跳过，请自行搜索🥺</p>
+<h4 id="2-AltStore启动"><a href="#2-AltStore启动" class="headerlink" title="2.AltStore启动"></a>2.AltStore启动</h4><p>首先电脑连接上你的设备，然后打开AltServer，然后点开Enable JIT，点到你要开启JIT权限的软件，然后会提示JIT已开启，可以断开设备了。<br><img src="https://s2.loli.net/2023/06/01/Y7gEATlr625zojN.png" srcset="/img/loading.gif" lazyload alt="屏幕截图_20230601_221620.png"><br>弊端是开启需要连接电脑，而且每关一次就要开启一次，考虑到在iPad上装虚拟机的过程中会有关虚拟机换启动选项的步骤，不推荐。</p>
+<blockquote>
+<p>PS：但是对于其他需要开启JIT的软件，这是个十分简单且有效的办法。比如用PojavLauncher在iPad上玩java版MC😘</p>
+</blockquote>
+<h3 id="无线启动"><a href="#无线启动" class="headerlink" title="无线启动"></a>无线启动</h3><h4 id="1-Jittetbug"><a href="#1-Jittetbug" class="headerlink" title="1.Jittetbug"></a>1.Jittetbug</h4><p>有几种方式，一种是通过越狱安装，一种是通过侧载安装，也可以通过iSign网站签名安装</p>
+<p>详细步骤参考<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv11587175">https://www.bilibili.com/read/cv11587175</a></p>
+<p>由于略有难度，若果只是想要试一试的话，不推荐</p>
+<blockquote>
+<p>PS：对于需要长期使用JIT的，十分推荐这个！😚建议在iSign签名安装</p>
+</blockquote>
+<h4 id="2-牛蛙助手"><a href="#2-牛蛙助手" class="headerlink" title="2.牛蛙助手"></a>2.牛蛙助手</h4><p>一看名字就知道是国人开发的（bushi）</p>
+<p>首先安装iTunes</p>
+<p>点开这个网址<a target="_blank" rel="noopener" href="https://ios222.com/">https://ios222.com/</a></p>
+<p>安装在电脑上后，连接设备，打开软件，就会安装在你的设备上，然后进行相应的操作后……</p>
+<p>你就会发现这个软件<strong>重量级</strong>的地方，那就是：满地广告。打开软件要看广告，开启JIT权限要看广告……</p>
+<p>不过这个软件的能力还是比较可观的，可以进行7天的ipa签名，可以虚拟定位，可以开启JIT</p>
+<blockquote>
+<p>PS：广告真的很烦😔</p>
+</blockquote>
+<p>启动JIT后就可以打开你的UTM.HV&#x2F;UTM了</p>
+<hr>
+<h2 id="三、虚拟机安装"><a href="#三、虚拟机安装" class="headerlink" title="三、虚拟机安装"></a>三、虚拟机安装</h2><p>至此，终于可以开始配置你的虚拟机了。</p>
+<p>UTM的库里有许多打包好的镜像资源，包括但不仅限于Arch、Kali、Ubuntu、Windows11&#x2F;10&#x2F;7&#x2F;xp、老MacOS等等，但这些大部分都是基于arm架构的，各大软件对arm的支持不能说不好，只能说不如x86_64的</p>
+<blockquote>
+<p>要只想体验体验可以直接安装一个现成的玩玩</p>
+</blockquote>
+<p>为什么选择ArchLinux？当然是：</p>
+<ol>
+<li>通过ArchLinux的安装可以更好的了解Linux底层运作的原理</li>
+<li>ArchLinux的软件很多</li>
+<li>遇事不决ArchWiki</li>
+<li>网络上的教程非常丰富，遇到不懂的事完全不用担心</li>
+</ol>
+<p>所以，具体的安装就不放在这里了😏（bushi）</p>
+<h3 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h3><p>首先跟着以上教程安装好对应版本的UTM，接着启动UTM的JIT，然后打开你的UTM</p>
+<p>应该会是这个界面，点击那个“+”号，新建虚拟机<br><img src="https://s2.loli.net/2023/06/02/CchVgDFlPOqMfz5.png" srcset="/img/loading.gif" lazyload alt="IMG_0152.PNG"></p>
+<p><strong>在配置虚拟机前，要注意一下几点：</strong></p>
+<h4 id="不要开启openGL加速"><a href="#不要开启openGL加速" class="headerlink" title="不要开启openGL加速"></a>不要开启openGL加速</h4><p>会影响模拟的稳定性（大概率会黑屏闪退</p>
+<blockquote>
+<p>这是我第一次装的时候遇到的问题，虚拟机存活1分钟</p>
+</blockquote>
+<h4 id="内存不要开太大"><a href="#内存不要开太大" class="headerlink" title="内存不要开太大"></a>内存不要开太大</h4><p>苹果会主动杀掉内存占用太多的软件，设置时最好<strong>不要超过机身内存的1&#x2F;4</strong></p>
+<blockquote>
+<p>这是我第二次安装时遇到的问题，虚拟机存活10分钟，被系统杀掉了</p>
+</blockquote>
+<p>设备对应的内存如下：<br><img src="https://pic2.zhimg.com/v2-a4c371fbe3698faa5ccc2a48e5078601_b.webp?consumer=ZHI_MENG" srcset="/img/loading.gif" lazyload alt="From——zhihu"></p>
+<h4 id="关于核心的数量"><a href="#关于核心的数量" class="headerlink" title="关于核心的数量"></a>关于核心的数量</h4><p>有说法说UTM没法用到你的多核，即使你开多核也只会用一个核心，但是它以为是多核就会降低一个核心的性能，所以尽量选一个核心</p>
+<blockquote>
+<p>选多个核心大概也没问题，我并没有进行实验验证会拖慢性能（也可能是我开不了虚拟化，慢的一，体现不出来）</p>
+</blockquote>
+<h4 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h4><p>基本是一把梭，注意以上的要点就行</p>
+<p>点完+会出现这个界面：<br><img src="https://s2.loli.net/2023/06/02/8isPoQpfnyFYdRa.png" srcset="/img/loading.gif" lazyload alt="IMG_0153.PNG"></p>
+<p>如果你是iPadOS15.4以下或一些特殊版本的设备，<strong>请点击“虚拟化”</strong>，不然请点击“模拟”</p>
+<blockquote>
+<p>简单地说就是能虚拟化就虚拟化</p>
+</blockquote>
+<p>然后进入这个界面：<br><img src="https://s2.loli.net/2023/06/02/hkNFjaqo98SrbLC.png" srcset="/img/loading.gif" lazyload alt="IMG_0154.PNG"></p>
+<p>这里我安装Linux系统，所以选择Linux</p>
+<p>如果你需要ArchLinux的镜像文件，可访问各大镜像站，比如：<br><a target="_blank" rel="noopener" href="https://mirrors.sdu.edu.cn/#/mirror">https://mirrors.sdu.edu.cn/#/mirror</a></p>
+<blockquote>
+<p>为什么不直接放下载连接？这是由于ArchLinux激进的滚动更新策略，在安装时最好用最新的镜像</p>
+</blockquote>
+<p>以山东大学镜像站为例：<br><img src="https://s2.loli.net/2023/06/02/ojY4m5pNlEebCHy.png" srcset="/img/loading.gif" lazyload alt="Z_~L_ULC4H_L_ED_C6_~G2I.png"></p>
+<p><img src="https://s2.loli.net/2023/06/02/NwLqWzR7Yh32GTf.png" srcset="/img/loading.gif" lazyload alt="EG_2L0TYMWY@0G3DF__H712.png"></p>
+<p>点击就送ArchLinux镜像文件😚</p>
+<blockquote>
+<p>使用山大镜像站喵，请使用山大镜像站谢谢喵~😽</p>
+</blockquote>
+<p>然后将镜像文件导入到你的iPad，在这一步选择你保存的镜像的路径：<br><img src="https://s2.loli.net/2023/06/02/KGEPvjDcZaoxbfw.png" srcset="/img/loading.gif" lazyload alt="IMG_0155.PNG"></p>
+<p>然后再下一步注意之前的要点：<br><img src="https://s2.loli.net/2023/06/02/qCPE2eLprulRWnh.png" srcset="/img/loading.gif" lazyload alt="reIMG_0156.PNG"><br>我用的21款iPadPro，运行内存是8g，所以我这里将运行内存设为2g</p>
+<p>核心数自己看着办吧😋</p>
+<p>不要开启OpenGl！不要开启OpenGl！不要开启OpenGl！</p>
+<p>下一步设置存储大小：<br><img src="https://s2.loli.net/2023/06/02/xbArqIUoQ6tTLj3.png" srcset="/img/loading.gif" lazyload alt="IMG_0157.PNG"><br>量力而行就可，最好在20g以上</p>
+<blockquote>
+<p>其实设大了是无所谓的，因为虚拟机的存储是动态的，没有使用时对于iPad就没有占用，比如。虽然我分了30g，但是在iPad中只占了5g左右</p>
+</blockquote>
+<p>之后就无脑下一步就行：<br><img src="https://s2.loli.net/2023/06/02/r9hsOkAvcu1FCGL.png" srcset="/img/loading.gif" lazyload alt="IMG_0158.PNG"></p>
+<p><img src="https://s2.loli.net/2023/06/02/9JvVD8GAKBTtNH1.png" srcset="/img/loading.gif" lazyload alt="IMG_0159.PNG"></p>
+<p>然后就进入系统进行安装</p>
+<h3 id="ArchLinux的安装"><a href="#ArchLinux的安装" class="headerlink" title="ArchLinux的安装"></a>ArchLinux的安装</h3><p>ArchLinux的具体安装步骤<strong>请跟随这篇文章</strong><a target="_blank" rel="noopener" href="https://arch.icekylin.online/">https://arch.icekylin.online/</a><br>接下来请<strong>同时参考</strong>上面这篇文章和以下内容来安装ArchLinux</p>
+<blockquote>
+<p>不是我懒🥺这篇文章真的非常详实地手把手指导了ArchLinux地安装，我写不到那个水平。图文并茂，每一步指令的结果都有。非常适合ArchLinux的上手安装</p>
+</blockquote>
+<p>这里说明一下在UTM上安装的不同点：</p>
+<p>在最后安装系统结束后，对于实体安装，需要拔下启动盘，防止再次启动后又进入安装界面。对于PC上的虚拟机，比如VMware、Virtual Box就直接重启虚拟机即可。<strong>而对于UTM</strong>，你需要将虚拟机先关机，然后再主页将CD&#x2F;DVD中的启动镜像清除再打开虚拟机才可以正常进入系统：<br><img src="https://s2.loli.net/2023/06/02/bpHvmCsDU8RxLtY.png" srcset="/img/loading.gif" lazyload alt="reIMG_0160.PNG"></p>
+<blockquote>
+<p>对于其他系统的安装应该也是一样的</p>
+</blockquote>
+<p>这篇文章唯一有一点无伤大雅的出入的地方就是在创建分区时没有讲创建EFI分区，自己创一个就行，</p>
+<p>还有，在挂载EFI分区时的说明是:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">mkdir</span> -p /mnt/boot<br>mount /dev/sdxn /mnt/boot <span class="hljs-comment"># 挂载 /boot 目录</span><br></code></pre></td></tr></table></figure>
+<p>但是图中的是：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">mkdir</span> -p /mnt/boot/efi<br>mount /dev/sdxn /mnt/boot/efi<br></code></pre></td></tr></table></figure>
+<p>选哪一种都行，但是会与后面的代码产生关联</p>
+<blockquote>
+<p>原谅笔者暂时不知道&#x2F;efi的原因</p>
+</blockquote>
+<p>具体为，在安装引导程序时：<br><img src="https://s2.loli.net/2023/06/02/yAtQ8v4uJ9grdmo.png" srcset="/img/loading.gif" lazyload alt="__ZIHGJ_TN7__SZBW_6VZ_5.png"></p>
+<blockquote>
+<ol start="2">
+<li>安装GRUB 到 EFI 分区：<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">&gt;grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH<br></code></pre></td></tr></table></figure></li>
+</ol>
+</blockquote>
+<p>这里如果选择第一种没有加&#x2F;efi的挂载方式，就原样输入即可，如果在之前加了&#x2F;efi，也就是EFI分区在&#x2F;boot&#x2F;efi，那么就要在这段代码上加上&#x2F;efi，具体如下：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ARCH<br></code></pre></td></tr></table></figure>
+
+<p>跟着这篇教程你应该就能在UTM上装好ArchLinux了。</p>
+<blockquote>
+<p>PS：其他系统的安装和在PC虚拟机上的安装流程都大差不差，只要装过系统就能在UTM上装一遍</p>
+</blockquote>
+<p>最后经过一些配置可得到以下效果：<br><img src="https://s2.loli.net/2023/06/02/njcoMCTBpxrDIA3.png" srcset="/img/loading.gif" lazyload alt="IMG_0139.PNG"><br><img src="https://s2.loli.net/2023/06/02/J3Oq9Pirbu1cRGf.png" srcset="/img/loading.gif" lazyload alt="IMG_0140.PNG"><br><img src="https://s2.loli.net/2023/06/02/vaUezIZ5GV4fjPq.jpg" srcset="/img/loading.gif" lazyload alt="1685607700001.jpg"></p>
+<blockquote>
+<p>PS：由于我的iPad无法开启虚拟化，图形界面的加载很卡，所以最后也没有将iPad变为生产力😭</p>
+</blockquote>
+<hr>
+<h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h2><p>前前后后搞了一个星期，终于完成了在iPad上装虚拟机的心愿。还是很快乐滴🥳</p>
+<hr>
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋"></a>彩蛋</h2><p>也许安卓设备也能装Linux系统？🤔</p>
+<p>有的！而且已经有别人打包好的apk！完全傻瓜式操作，十分方便，具体参考<a target="_blank" rel="noopener" href="https://docs.aidlux.com/#/">https://docs.aidlux.com/#/</a></p>
+<p>附一张运行截图：<br><img src="https://s2.loli.net/2023/06/02/D6FPLBzTgnZIsHK.jpg" srcset="/img/loading.gif" lazyload alt="Screenshot_2023-06-02-11-56-12-444_com.aidlux.jpg"><br>实际非常丝滑😇，简直就是我理想中的系统，但是在手机上体验比较一般，最好还是配合安卓平板来使用</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/iPad/">#iPad</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>NextiPad</div>
+      <div>http://example.com/2023/06/01/NextiPad/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>PH Gao</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年6月1日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/06/02/ENG-Program/" title="ENG_Program">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">ENG_Program</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/05/27/About-cisn2023/" title="About-CISCN2023">
+                        <span class="hidden-mobile">About-CISCN2023</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
