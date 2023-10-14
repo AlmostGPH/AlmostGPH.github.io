@@ -16,28 +16,22 @@
   <meta name="author" content="PH Gao">
   <meta name="keywords" content="Blog">
   
-    <meta name="description" content="第一次打线下赛，会的太少了，实在是坐牢。 0x01 Misc签到简单的base转换，丢进cyberchef即可 0x02 连连看web签到提，要在60秒内完成连连看。我的做法是将源码中更新时间的函数注释掉，再慢慢连  完成游戏得到flag 0x03 套娃打开压缩包发现4个txt文档和一个jpg，都进行了加密。提示crc爆破，发现txt文档大小很小，都是4，于是用代码进行爆破crc32爆破代码为：">
+    <meta name="description" content="Misc签到题打开txt发现一篇空白，本着misc手的直觉按下ctrl+a，果然发现有空白符，然后立马使用white space和snow隐写发现没用，拖到word里面发现全是空格，猜测和每一行空格的数量有关。前两排空格的数量用ascii解码得到fl，更加印证了我的观点，于是编写解码脚本： 123456789101112131415161718192021222324252627282930313">
 <meta property="og:type" content="article">
-<meta property="og:title" content="About_TKHASH">
-<meta property="og:url" content="http://example.com/2023/04/09/About-TKHASH/index.html">
+<meta property="og:title" content="About_ISEC2023">
+<meta property="og:url" content="http://example.com/2023/10/11/About-ISEC2023/index.html">
 <meta property="og:site_name" content="Maybe_GPH&#39;s_Blog?">
-<meta property="og:description" content="第一次打线下赛，会的太少了，实在是坐牢。 0x01 Misc签到简单的base转换，丢进cyberchef即可 0x02 连连看web签到提，要在60秒内完成连连看。我的做法是将源码中更新时间的函数注释掉，再慢慢连  完成游戏得到flag 0x03 套娃打开压缩包发现4个txt文档和一个jpg，都进行了加密。提示crc爆破，发现txt文档大小很小，都是4，于是用代码进行爆破crc32爆破代码为：">
+<meta property="og:description" content="Misc签到题打开txt发现一篇空白，本着misc手的直觉按下ctrl+a，果然发现有空白符，然后立马使用white space和snow隐写发现没用，拖到word里面发现全是空格，猜测和每一行空格的数量有关。前两排空格的数量用ascii解码得到fl，更加印证了我的观点，于是编写解码脚本： 123456789101112131415161718192021222324252627282930313">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.loli.net/2023/04/09/bZxmC1n6aHcGyi9.png">
-<meta property="og:image" content="https://s2.loli.net/2023/04/21/bv4eP3HzDOFc6xC.png">
-<meta property="og:image" content="https://s2.loli.net/2023/04/09/nePQ3kThSr84RHp.png">
-<meta property="og:image" content="https://s2.loli.net/2023/04/21/OPjDm4vd2Szrtle.png">
-<meta property="og:image" content="https://ts1.cn.mm.bing.net/th/id/R-C.d9d2428cb4a8989165ef2df33f4b9f69?rik=yjUaLGJh275RMw&riu=http://www.dgnewstar.cn/upfile/20190611/026-3.jpg&ehk=Lf89yuu4GTS9C8B/eZIc2QOTCHpKMTPFD+inycK/JW4=&risl=&pid=ImgRaw&r=0">
-<meta property="article:published_time" content="2023-04-09T05:44:45.000Z">
-<meta property="article:modified_time" content="2023-05-28T02:44:21.909Z">
+<meta property="article:published_time" content="2023-10-11T09:35:28.000Z">
+<meta property="article:modified_time" content="2023-10-11T12:23:10.831Z">
 <meta property="article:author" content="PH Gao">
 <meta property="article:tag" content="ctf">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://s2.loli.net/2023/04/09/bZxmC1n6aHcGyi9.png">
   
   
   
-  <title>About_TKHASH - Maybe_GPH&#39;s_Blog?</title>
+  <title>About_ISEC2023 - Maybe_GPH&#39;s_Blog?</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="About_TKHASH"></span>
+            <span id="subtitle" data-typed-text="About_ISEC2023"></span>
           
         </div>
 
@@ -214,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-09 13:44" pubdate>
-          2023年4月9日 下午
+        <time datetime="2023-10-11 17:35" pubdate>
+          2023年10月11日 下午
         </time>
       </span>
     
@@ -226,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          958 字
         
       </span>
     
@@ -237,7 +231,7 @@
         
         
         
-          11 分钟
+          8 分钟
         
       </span>
     
@@ -275,29 +269,17 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">About_TKHASH</h1>
+            <h1 style="display: none">About_ISEC2023</h1>
             
             
               <div class="markdown-body">
                 
-                <p>第一次打线下赛，会的太少了，实在是坐牢。</p>
-<h1 id="0x01-Misc签到"><a href="#0x01-Misc签到" class="headerlink" title="0x01 Misc签到"></a>0x01 Misc签到</h1><p>简单的base转换，丢进cyberchef即可</p>
-<h1 id="0x02-连连看"><a href="#0x02-连连看" class="headerlink" title="0x02 连连看"></a>0x02 连连看</h1><p>web签到提，要在60秒内完成连连看。我的做法是将源码中更新时间的函数注释掉，再慢慢连</p>
-<p><img src="https://s2.loli.net/2023/04/09/bZxmC1n6aHcGyi9.png" srcset="/img/loading.gif" lazyload alt="QTX7XEGT___P5DZX_K5~2QF.png"></p>
-<p>完成游戏得到flag</p>
-<h1 id="0x03-套娃"><a href="#0x03-套娃" class="headerlink" title="0x03 套娃"></a>0x03 套娃</h1><p>打开压缩包发现4个txt文档和一个jpg，都进行了加密。提示crc爆破，发现txt文档大小很小，都是4，于是用代码进行爆破<br><img src="https://s2.loli.net/2023/04/21/bv4eP3HzDOFc6xC.png" srcset="/img/loading.gif" lazyload alt="I69RU_H3OR_C__Q~I_X_KMP.png"><br>crc32爆破代码为：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># coding:utf8</span><br><span class="hljs-comment"># python3</span><br><br><span class="hljs-keyword">from</span> binascii <span class="hljs-keyword">import</span> crc32<br><span class="hljs-keyword">from</span> itertools <span class="hljs-keyword">import</span> product<br><br>dic = <span class="hljs-string">&#x27;abcdefghijklmnopqrstuvwxyz0123456789_&#x27;</span><br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">crack</span>(<span class="hljs-params">content_len, wanted</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;start cracking...&#x27;</span>)<br>    tuple_iter = product(dic, repeat=content_len)<br>    <span class="hljs-keyword">for</span> char_tuple <span class="hljs-keyword">in</span> tuple_iter:<br>        char_str = <span class="hljs-string">&#x27;&#x27;</span>.join(char_tuple)<br>        crc32_value = crc32(char_str.encode())<br>        <span class="hljs-keyword">if</span> crc32_value == wanted:<br>            <span class="hljs-built_in">print</span>(char_str, <span class="hljs-built_in">hex</span>(crc32_value))<br><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:      <span class="hljs-comment">#使用方法：有几n字节，crc码为XXXXXXXX，就加入一行crack(n,0xXXXXXXXX)</span><br>    crack(<span class="hljs-number">4</span>, <span class="hljs-number">0xCE70D424</span>)<br>    crack(<span class="hljs-number">4</span>, <span class="hljs-number">0x0AEA5617</span>)<br>    crack(<span class="hljs-number">4</span>, <span class="hljs-number">0xA47083A4</span>)<br>    crack(<span class="hljs-number">4</span>, <span class="hljs-number">0x8AE5542D</span>)<br><br></code></pre></td></tr></table></figure>
-<p>代码来自[<a target="_blank" rel="noopener" href="https://blog.csdn.net/xuqi7/article/details/120389212]%EF%BC%88https://blog.csdn.net/xuqi7/article/details/120389212%EF%BC%89">https://blog.csdn.net/xuqi7/article/details/120389212]（https://blog.csdn.net/xuqi7/article/details/120389212）</a></p>
-<p>得到密码opendoor，打开图片<br>![M5___@_MW&#96;___3F_FQ@<a href="mailto:&#x50;&#x40;&#x57;&#77;&#x2e;&#x70;&#x6e;&#x67;">&#x50;&#x40;&#x57;&#77;&#x2e;&#x70;&#x6e;&#x67;</a>](<a target="_blank" rel="noopener" href="https://s2.loli.net/2023/04/09/mSJq3lwriB7OY5h.png">https://s2.loli.net/2023/04/09/mSJq3lwriB7OY5h.png</a>)<br>然后又给了提示，提示图片高度，于是加高图片高度得到：<br><img src="https://s2.loli.net/2023/04/09/nePQ3kThSr84RHp.png" srcset="/img/loading.gif" lazyload alt="MN08SJSQA6B0_NZ_DY~_IXD.png"></p>
-<p>jpg更改高度的方法为：用winhex打开jpg图片，在标志FFC0之后前四位为长度，然后两位为精度，然后四位为高度，把高度改大就行<br><img src="https://s2.loli.net/2023/04/21/OPjDm4vd2Szrtle.png" srcset="/img/loading.gif" lazyload alt="J_V_@YNSR_Q52J5__~E2__9.png"></p>
+                <h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h2><p>打开txt发现一篇空白，本着misc手的直觉按下ctrl+a，果然发现有空白符，然后立马使用white space和snow隐写发现没用，拖到word里面发现全是空格，猜测和每一行空格的数量有关。前两排空格的数量用ascii解码得到<strong>fl</strong>，更加印证了我的观点，于是编写解码脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><code class="hljs python&#123;.line-numbers&#125;">spaces = [&#x27;                                                                                                      &#x27;,&#x27;\<br>                                                                                                            &#x27;,&#x27;\<br>                                                                                                 &#x27;,&#x27;\<br>                                                                                                       &#x27;,&#x27;\<br>                                                                                                                           &#x27;,&#x27;\<br>                                                                         &#x27;,&#x27;\<br>                                                                                   &#x27;,&#x27;\<br>                                                                     &#x27;,&#x27;\<br>                                                                   &#x27;,&#x27;\<br>                                             &#x27;,&#x27;\<br>                                                                                                     &#x27;,&#x27;\<br>                                                                      &#x27;,&#x27;\<br>                                                        &#x27;,&#x27;\<br>                                                                                                                        &#x27;,&#x27;\<br>                                                  &#x27;,&#x27;\<br>                                                                  &#x27;,&#x27;\<br>                                                                                                                      &#x27;,&#x27;\<br>                                                 &#x27;,&#x27;\<br>                                                                                                                      &#x27;,&#x27;\<br>                                                                                                         &#x27;,&#x27;\<br>                                                                                                                       &#x27;,&#x27;\<br>                                                         &#x27;,&#x27;\<br>                                                                                                     &#x27;,&#x27;\<br>                                                                      &#x27;,&#x27;\<br>                                                                                                                      &#x27;,&#x27;\<br>                                                                                                 &#x27;,&#x27;\<br>                                                                                                       &#x27;,&#x27;\<br>                                                                                                         &#x27;,&#x27;\<br>                                                                                                                      &#x27;,&#x27;\<br>                                                                                                                        &#x27;,&#x27;\<br>                                                &#x27;,&#x27;\<br>                                                                                         &#x27;,&#x27;\<br>                                                                                                              &#x27;,&#x27;\<br>                                                                                                                      &#x27;,&#x27;\<br>                                                   &#x27;,&#x27;\<br>                                                                                                          &#x27;,&#x27;\<br>                                                                                                            &#x27;,&#x27;\<br>                                                                                                 &#x27;,&#x27;\<br>                                                                                                         &#x27;,&#x27;\<br>                                                &#x27;,&#x27;\<br>                                                                                                                      &#x27;,&#x27;\<br>                                                                            &#x27;,&#x27;\<br>                                                                                                                             &#x27;]<br>for i in spaces:<br>    amt = i.count(&#x27; &#x27;)<br>    print(chr(amt),end = &#x27;&#x27;)<br></code></pre></td></tr></table></figure>
+
+<p>运行得到flag:</p>
 <blockquote>
-<p>444 7777 33 2 7777 999 777 444 4 44 8</p>
-</blockquote>
-<p>这时又卡住了，然后就上网搜索类似文段，最后再外网搜到了相似的提问，解答是用老式手机打字时，一个数字对应多个字母，按几次就是第几个字母</p>
-<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.d9d2428cb4a8989165ef2df33f4b9f69?rik=yjUaLGJh275RMw&riu=http://www.dgnewstar.cn/upfile/20190611/026-3.jpg&ehk=Lf89yuu4GTS9C8B/eZIc2QOTCHpKMTPFD+inycK/JW4=&risl=&pid=ImgRaw&r=0" srcset="/img/loading.gif" lazyload alt="键盘"></p>
-<p>于是对应得到</p>
-<blockquote>
-<p>iseasyright</p>
+<p>flag{ISEC-eF8x2Bv1viw9eFvagivx0Ynv3jlai0vL}</p>
 </blockquote>
 
                 
@@ -323,8 +305,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>About_TKHASH</div>
-      <div>http://example.com/2023/04/09/About-TKHASH/</div>
+      <div>About_ISEC2023</div>
+      <div>http://example.com/2023/10/11/About-ISEC2023/</div>
     </div>
     <div class="license-meta">
       
@@ -336,7 +318,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年4月9日</div>
+          <div>2023年10月11日</div>
         </div>
       
       
@@ -368,9 +350,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/05/21/LearningPWN/" title="LearningPWN">
+                      <a href="/2023/10/14/About-BUUCTF/" title="About_BUUCTF">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">LearningPWN</span>
+                        <span class="hidden-mobile">About_BUUCTF</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -378,8 +360,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/02/iPad-with-codespace/" title="Your next IDE is not on computer">
-                        <span class="hidden-mobile">Your next IDE is not on computer</span>
+                      <a href="/2023/09/20/HCTF2023/" title="HCTF2023">
+                        <span class="hidden-mobile">HCTF2023</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
