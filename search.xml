@@ -12,6 +12,14 @@
       
       
       
+        <tags>
+            
+            <tag> ctf </tag>
+            
+            <tag> misc </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -28,6 +36,8 @@
         <tags>
             
             <tag> ctf </tag>
+            
+            <tag> crypto </tag>
             
         </tags>
       
@@ -124,13 +134,13 @@
       
         <tags>
             
-            <tag> school </tag>
-            
             <tag> Blog </tag>
             
             <tag> Hexo </tag>
             
             <tag> Git </tag>
+            
+            <tag> school </tag>
             
             <tag> daily </tag>
             
