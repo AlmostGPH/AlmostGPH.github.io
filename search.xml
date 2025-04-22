@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Kernel Panic</title>
+      <link href="/2025/04/22/Kernel%E2%80%94panic/"/>
+      <url>/2025/04/22/Kernel%E2%80%94panic/</url>
+      
+        <content type="html"><![CDATA[<h1 id="晴天霹雳">晴天霹雳</h1><p>昨天晚上正打算用arch美美复现一个ai攻击论文，想着先更新一下arch，发现electron更新太慢了，决定先不更新electron，又发现老板electron依赖几个包不能更新，于是决定这些包也不更新。</p><blockquote><p>没想到，这次更新就是噩梦的开始。</p></blockquote><p><img src="https://s2.loli.net/2025/04/22/AqxzuSopWNK2gB9.jpg" alt="ead38818e24c76b0c9c7716c6bc6d802.jpg" /></p><h1 id="事件起因">事件起因</h1><p>其实更新并没有正常结束，刚更新完的时候就已经有蹊跷了</p><blockquote><p>pacman不能运行，报错缺少libicuuc.so.76</p></blockquote><p>但是我并没有在意，认为</p><blockquote><p>重启就好啦☝️🤓</p></blockquote><p>于是重启之后就出现了大名鼎鼎的 <strong>KERNEL PANIC</strong></p><p>当时我的表情是这样的：</p><p><img src="https://s2.loli.net/2025/04/22/asVcXFk56lMK79H.jpg" alt="598ff8b784cb741bd3fd139a6f9324ac.jpg" /></p><p>做实验做到蓝屏的救赎感谁懂</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> daily </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一场悲剧😭</title>
       <link href="/2024/06/06/About-a-Tragic/"/>
       <url>/2024/06/06/About-a-Tragic/</url>
